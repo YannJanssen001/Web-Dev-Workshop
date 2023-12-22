@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Feedback</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Customer Feedback</h1>
+    <form action="/submit_feedback" method="post" id="feedbackForm">
+        <br/>
+        <br/>
+        <h4>Rate MacBook Pro, from 1 to 5.</h4>
+        <p> 1: It needs improvement, 3: It's alright, 5: I love it</p>
+        <div class="rating">
+            <div>
+                <label for="rating1">1</label>
+                <input type="radio" id="rating1" name="rating" value="1">
+            </div>
+            <div>
+                <label for="rating2">2</label>
+                <input type="radio" id="rating2" name="rating" value="2">
+            </div>
+            <div>
+                <label for="rating3">3</label>
+                <input type="radio" id="rating3" name="rating" value="3">
+            </div>
+            <div>
+                <label for="rating4">4</label>
+                <input type="radio" id="rating4" name="rating" value="4">
+            </div>
+            <div>
+                <label for="rating5">5</label>
+                <input type="radio" id="rating5" name="rating" value="5">
+            </div>
+        </div>
+        <img class="product-image2" src="macbookpro.jpg" alt="macbookpro">
+        <br/>
+        <label for="feedback">Additional Feedback:</label>
+        <br/>
+        <textarea id="feedback" name="feedback"></textarea>
+        <br/>
+        <a href="next_product_feedback2.html" class="submit-button">Next</a>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
